@@ -1,0 +1,27 @@
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+/* Animation keyframes */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    background-color: #007BFF;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #0056b3;
+  }
+}
+
+/* Apply animation with a class */
+.animate {
+  animation: pulse 1s ease-in-out 3;
+}
